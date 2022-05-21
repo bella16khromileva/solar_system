@@ -1,5 +1,8 @@
-import pygame
 import math
+
+import pygame
+
+
 pygame.init()
 
 WIDTH, HEIGHT = 800, 800
@@ -18,8 +21,8 @@ class Planet:
 
     AU = 149.6e6 * 1000
     G = 6.67428e-11
-    SCALE = 230/AU  # 1AU = 100 pix
-    TIMESTEP = 3600*24  # 1 DAY
+    SCALE = 230 / AU  # 1AU = 100 pix
+    TIMESTEP = 3600 * 24  # 1 DAY
 
     def __init__(self, x, y, radius, colour, mass):
         self.x = x
